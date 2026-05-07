@@ -155,6 +155,13 @@ body {
 /* Calendly widget stability fix */
 .calendly-widget-wrapper {
     margin-top: 10px;
+    height: 80vh;
+    min-height: 630px;
+}
+
+.calendly-inline-widget {
+    height: 100% !important;
+    min-height: 630px;
 }
 
 /* =========================
@@ -179,6 +186,18 @@ body {
 
     .calendly-subtext {
         font-size: 16px;
+    }
+
+    /* ADD THESE: */
+    .calendly-widget-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .calendly-inline-widget {
+        width: 100% !important;
+        min-width: unset !important;
     }
 
 }
