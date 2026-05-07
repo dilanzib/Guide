@@ -149,19 +149,22 @@ body {
     margin: 0 0 10px 0;
 }
 
-/* Calendly widget stability fix */
+.custom-calendly-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .calendly-widget-wrapper {
     width: 100%;
-    max-width: 1000px;
-    margin: 10px auto 0;
-    box-sizing: border-box;
+    min-height: 750px;
 }
 
 .calendly-inline-widget {
     width: 100% !important;
-    min-width: 320px;
-    height: 700px !important;
-    min-height: 700px !important;
+    min-width: 320px !important;
+    height: 750px !important;
+    min-height: 750px !important;
 }
 
 /* =========================
@@ -186,13 +189,13 @@ body {
         font-size: 16px;
     }
 
-    /* ADD THESE: */
     .calendly-widget-wrapper {
-        padding: 0 10px;
+        min-height: 900px;
     }
 
     .calendly-inline-widget {
-        min-width: unset !important;
+        height: 900px !important;
+        min-height: 900px !important;
     }
 
 }
