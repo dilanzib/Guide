@@ -55,10 +55,9 @@ body {
 .video-embed {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
+    padding-top: 56.25%; /* 16:9 ratio */
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .video-embed iframe {
@@ -67,9 +66,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    border: 0;
 }
-
 /* =========================
    BUTTON
    ========================= */
@@ -153,14 +151,17 @@ body {
 
 /* Calendly widget stability fix */
 .calendly-widget-wrapper {
-    margin-top: 10px;
-    height: 80vh;
-    min-height: 630px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto 0;
+    box-sizing: border-box;
 }
 
 .calendly-inline-widget {
-    height: 100% !important;
-    min-height: 630px;
+    width: 100% !important;
+    min-width: 320px;
+    height: 700px !important;
+    min-height: 700px !important;
 }
 
 /* =========================
@@ -174,6 +175,7 @@ body {
 
     .custom-button {
         font-size: 16px;
+        padding: 5px 9px 9px;
     }
 
     .custom-calendly-container {
@@ -186,13 +188,10 @@ body {
 
     /* ADD THESE: */
     .calendly-widget-wrapper {
-        width: 100%;
-        box-sizing: border-box;
         padding: 0 10px;
     }
 
     .calendly-inline-widget {
-        width: 100% !important;
         min-width: unset !important;
     }
 
