@@ -126,7 +126,6 @@ body {
     max-width: 800px;
     width: 90%;
     margin: 40px auto;
-    padding: 0 20px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -174,14 +173,11 @@ body {
     }
 
     .custom-button {
-        width: 90%;
         font-size: 16px;
-        padding: 12px 18px;
     }
 
     .custom-calendly-container {
         width: 95%;
-        padding: 0 15px;
     }
 
     .calendly-subtext {
