@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Open Graph for Instagram link preview -->
+      <!-- OG tags FIRST, before any scripts or stylesheets -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dilanzib.github.io/Guide/"> <!-- Replace with your page URL -->
+    <meta property="og:url" content="https://brandtobank-da820.web.app/">
     <meta property="og:title" content="Digital Freedom">
-    <meta property="og:image" content="logo1.jpg">
-   
-    <!-- Import Raleway font -->
+    <meta property="og:description" content="How I replaced my 5k/month job with Digital Products">
+    <meta property="og:image" content="https://brandtobank-da820.web.app/logo1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-</head>x
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/popup.css"> <!-- popup styles (white background etc.) -->
+    <!-- JS -->
+    <script type="module" src="./js/popup.js"></script>
+    <title>Free Video Case Study</title>
+</head>
+<body>
+
+<!-- ====== HEADLINE ====== -->
+<div id="step1-headline">
+  <span class="step-text"></span>
+</div>
 
 <body class="body">
   <div id="step1-headline">
-  <span class="step-number">STEP #1 -</span>
-  <span class="step-text">WATCH THE CASE STUDY BELOW</span>
-    <span class="step-number">**</span>
+  <span class="step-number">FREE VIDEO CASE STUDY WILL TEACH YOU:</span>
 </div>
 
-  <div id="video-section">
-    <div class="video-inner">
-      <div class="video-embed">
-        <iframe
-          src="https://www.loom.com/embed/cce042657e06415d9a30a3bcf2b62e04"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-          allow="autoplay; fullscreen"
-        ></iframe>
-      </div>
-    </div>
-  </div>
+<!-- ====== MAIN HEADING ====== -->
+<div class="custom-calendly-container">
+  <h1 class="calendly-heading">
+   Learn how I'm making $100-300 a day with digital products...
+  </h1>
+</div>
+<!-- ====== GET STARTED BUTTON ====== -->
+<div id="button-section">
+  <a href="#" class="custom-button" id="openModal">
+    <span id="button1">WATCH NOW ❯❯</span>
+  </a>
+</div>
 
-  <div id="button-section">
-    <a class="custom-button" href="./page.html">
-      <span id="button1">APPLY TO WORK 1-to-1 WITH ME</span>
-      <span id="button2">Only Apply AFTER You've Watched The Entire Video</span>
-    </a>
-  </div>
+<div class="cta-text">
+  <p class="cta-main">Enter your info above</p>
+  <p class="cta-sub">Get instant access to the free video training that breaks everything down step-by-step</p>
+</div>
+<!-- ====== POPUP MODAL ====== -->
+<div class="modal-overlay" id="modal" style="display:none;">
+  <div class="modal">
+    <div class="modal-close" id="closeModal">✕</div>
+    <h2>Enter Your Info Below and learn how to Make $100-300 per day with AI...</h2>
 
-  
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <button id="submitForm">WATCH NOW ❯❯</button>
+
+    <small>
+      Your information is secure. We will NEVER share your details with anyone.
+    </small>
+  </div>
+</div>
 
 </body>
 </html>
